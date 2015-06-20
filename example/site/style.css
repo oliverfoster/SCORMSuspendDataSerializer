@@ -1,0 +1,41 @@
+.slider {
+	display: inline-block;
+	padding: 20px;
+}
+
+.sliders {
+	font-size: x-small;
+	padding-left: 20px;
+}
+
+.results {
+	padding-left: 20px;
+}
+
+.encoded, .json {
+	word-break: break-all;
+	font-size: x-small;
+	padding: 20px;
+}
+
+.title {
+	font-size: larger;
+}
+
+.note {
+	font-size: x-small;
+	padding: 20px;
+}
+
+pre {
+	font-size: x-small;
+}
+
+.no-results .encoded-title, .no-results .encoded,
+.no-results .json-title, .no-results .json-title {
+	display:none;
+}
+
+body {
+	overflow-y: scroll;
+}
