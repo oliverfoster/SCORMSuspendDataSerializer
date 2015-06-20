@@ -7,7 +7,7 @@ Boolean+Number Arrays to Base64 serializer/deserializer library.
 
 Usage:
 
-```
+```javascript
 //make simple nested number/boolean arrays storing question component user selections + states
 var originalArray = Array[Array[number],Array[boolean],...];
 
