@@ -1,3 +1,4 @@
+//https://raw.githubusercontent.com/oliverfoster/SCORMSuspendDataSerializer 2015-06-26
 (function() {
 
 	function indexOf(arr, func) {
@@ -207,7 +208,7 @@
 			variableDataType = DataType.getNumberType(variable);
 			break;
 		case "string":
-			throw "Type not found '"+variableNativeType+"'";
+			variableDataType = DataType.getName("string");
 			break;
 		default: 
 			var supportedItemDataTypes = DataType.getTypes(variableNativeType);
@@ -338,6 +339,11 @@
 				"name": "variable",
 				"size": "variable",
 				"type": "variable"
+			},
+			{
+				"name": "string",
+				"size": "variable",
+				"type": "string"
 			}
 		];
 		for (var i = 0, type; type = types[i++];) {
