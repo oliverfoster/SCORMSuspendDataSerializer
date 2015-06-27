@@ -5,6 +5,9 @@ Boolean+Number Arrays to Base64 serializer/deserializer library.
 
 [Example Calculator](https://rawgit.com/oliverfoster/SCORMSuspendDataSerializer/master/example/index.html)
 
+Requires:  
+[UnderscoreJS](http://underscorejs.org/) or [lodash](https://lodash.com)  
+  
 Usage:
 
 ```javascript
