@@ -1,4 +1,4 @@
-//https://raw.githubusercontent.com/oliverfoster/SCORMSuspendDataSerializer 2015-06-27
+//https://raw.githubusercontent.com/oliverfoster/SCORMSuspendDataSerializer 2015-07-07
 (function(_) {
 
 	function toPrecision(number, precision) {
@@ -197,11 +197,11 @@
 			//single native type in array, multiple datatype lengths
 			switch (uniqueNativeTypeNames[0]) {
 			case "number":
+				var foundDecimal = _.findWhere(foundItemTypes, { decimal: true});
+				if (foundDecimal) return foundDecimal;
 				return _.max(foundItemTypes, function(type) {
-					if (type.decimal) return true;
 					return type.max;
 				});
-				
 			}
 
 			throw "Unsupported data types";
@@ -689,4 +689,3 @@
 
 
 })(_);
-
